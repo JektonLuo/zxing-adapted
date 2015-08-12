@@ -53,12 +53,9 @@ public final class R {
         public static final int history_title=0x7f0a001a;
         public static final int image_view=0x7f0a0018;
         public static final int launch_product_query=0x7f0a0003;
-        public static final int menu_encode=0x7f0a002a;
-        public static final int menu_help=0x7f0a0029;
-        public static final int menu_history=0x7f0a0027;
-        public static final int menu_history_clear_text=0x7f0a002c;
-        public static final int menu_history_send=0x7f0a002b;
-        public static final int menu_settings=0x7f0a0028;
+        public static final int menu_encode=0x7f0a0027;
+        public static final int menu_history_clear_text=0x7f0a0029;
+        public static final int menu_history_send=0x7f0a0028;
         public static final int menu_share=0x7f0a0026;
         public static final int meta_text_view=0x7f0a0013;
         public static final int meta_text_view_label=0x7f0a0012;
@@ -96,9 +93,8 @@ public final class R {
         public static final int share=0x7f030009;
     }
     public static final class menu {
-        public static final int capture=0x7f0c0000;
-        public static final int encode=0x7f0c0001;
-        public static final int history=0x7f0c0002;
+        public static final int encode=0x7f0c0000;
+        public static final int history=0x7f0c0001;
     }
     public static final class raw {
         public static final int beep=0x7f050000;
