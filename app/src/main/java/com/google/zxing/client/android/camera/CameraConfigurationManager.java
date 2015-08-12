@@ -48,14 +48,17 @@ final class CameraConfigurationManager {
      */
     void initFromCameraParameters(Camera camera) {
         Camera.Parameters parameters = camera.getParameters();
-        WindowManager manager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        WindowManager manager = (WindowManager) context .getSystemService(Context.WINDOW_SERVICE);
         Display display = manager.getDefaultDisplay();
-        Point theScreenResolution = new Point();
-        display.getSize(theScreenResolution);
-        screenResolution = theScreenResolution;
-        Log.i(TAG, "Screen resolution: " + screenResolution);
-        cameraResolution = CameraConfigurationUtils.findBestPreviewSizeValue(parameters, screenResolution);
-        Log.i(TAG, "Camera resolution: " + cameraResolution);
+        int width = display.getWidth();
+        int height = display.getHeight();
+        if (width < height) {
+            int temp = width;
+            width = height;
+            height = temp;
+        }
+        screenResolution = new Point(height, width);
+        cameraResolution = CameraConfigurationUtils.findBestPreviewSizeValue(parameters, new Point(width, height));
     }
 
     void setDesiredCameraParameters(Camera camera, boolean safeMode) {
@@ -102,7 +105,7 @@ final class CameraConfigurationManager {
         parameters.setPreviewSize(cameraResolution.x, cameraResolution.y);
 
         Log.i(TAG, "Final camera parameters: " + parameters.flatten());
-
+        camera.setDisplayOrientation(90);
         camera.setParameters(parameters);
 
         Camera.Parameters afterParameters = camera.getParameters();
