@@ -89,11 +89,12 @@ public final class CameraManager {
         if (!initialized) {
             initialized = true;
             configManager.initFromCameraParameters(theCamera);
-            if (requestedFramingRectWidth > 0 && requestedFramingRectHeight > 0) {
-                setManualFramingRect(requestedFramingRectWidth, requestedFramingRectHeight);
-                requestedFramingRectWidth = 0;
-                requestedFramingRectHeight = 0;
-            }
+            setMyFrameRect();
+//            if (requestedFramingRectWidth > 0 && requestedFramingRectHeight > 0) {
+//                setManualFramingRect(requestedFramingRectWidth, requestedFramingRectHeight);
+//                requestedFramingRectWidth = 0;
+//                requestedFramingRectHeight = 0;
+//            }
         }
 
         Camera.Parameters parameters = theCamera.getParameters();
@@ -118,6 +119,23 @@ public final class CameraManager {
             }
         }
 
+    }
+
+    private void setMyFrameRect() {
+        Point screenResolution = configManager.getScreenResolution();
+        int width = screenResolution.y * 5 / 8;
+        int height = width;
+        if (width > screenResolution.x) {
+            width = screenResolution.x;
+        }
+        if (height > screenResolution.y) {
+            height = screenResolution.y;
+        }
+        int leftOffset = (screenResolution.x - width) / 2;
+        int topOffset = (screenResolution.y - height) / 2;
+        framingRect = new Rect(leftOffset, topOffset, leftOffset + width, topOffset + height);
+        Log.d(TAG, "setting my framing rect: " + framingRect);
+        framingRectInPreview = null;
     }
 
     public synchronized boolean isOpen() {
