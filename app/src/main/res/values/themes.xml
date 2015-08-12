@@ -14,7 +14,6 @@
  limitations under the License.
  -->
 <resources>
-
     <style name="CaptureTheme" parent="android:Theme.Holo">
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>

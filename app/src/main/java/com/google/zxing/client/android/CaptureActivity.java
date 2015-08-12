@@ -23,7 +23,6 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.SurfaceHolder;
@@ -55,13 +54,12 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
 
     private static final String TAG = CaptureActivity.class.getSimpleName();
 
-    private static final long DEFAULT_INTENT_RESULT_DURATION_MS = 1500L;
+    private static final long DEFAULT_INTENT_RESULT_DURATION_MS = 0L;
 
     private CameraManager cameraManager;
     private CaptureActivityHandler handler;
     private Result savedResultToShow;
     private ViewfinderView viewfinderView;
-    private Result lastResult;
     private boolean hasSurface;
     private Collection<BarcodeFormat> decodeFormats;
     private Map<DecodeHintType, ?> decodeHints;
@@ -94,8 +92,6 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
         inactivityTimer = new InactivityTimer(this);
         beepManager = new BeepManager(this);
         ambientLightManager = new AmbientLightManager(this);
-
-        PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
     }
 
     @Override
@@ -112,7 +108,6 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
         viewfinderView.setCameraManager(cameraManager);
 
         handler = null;
-        lastResult = null;
 
         resetStatusView();
 
@@ -249,7 +244,6 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
      */
     public void handleDecode(Result rawResult, Bitmap barcode, float scaleFactor) {
         inactivityTimer.onActivity();
-        lastResult = rawResult;
 
         handleDecodeExternally(rawResult, barcode);
     }
@@ -367,7 +361,6 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
 
     private void resetStatusView() {
         viewfinderView.setVisibility(View.VISIBLE);
-        lastResult = null;
     }
 
     public void drawViewfinder() {
