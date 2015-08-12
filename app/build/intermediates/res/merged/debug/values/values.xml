@@ -3,49 +3,49 @@
     <!-- From: file:/E:/myWorkspace/Android/zxing-adapted/app/src/main/res/values/arrays.xml -->
     <eat-comment/>
     <string-array name="country_codes" ns1:ignore="MissingTranslation">
-    <item>-</item>
-    <item>AR</item>
-    <item>AU</item>
-    <item>BR</item>
-    <item>BG</item>
-    <item>CA</item>
-    <item>CH</item>
-    <item>CN</item>
-    <item>CZ</item>
-    <item>DE</item>
-    <item>DK</item>
-    <item>ES</item>
-    <item>FI</item>
-    <item>FR</item>
-    <item>GB</item>
-    <item>GR</item>
-    <item>HU</item>
-    <item>ID</item>
-    <item>IT</item>
-    <item>JP</item>
-    <item>KR</item>
-    <item>NL</item>
-    <item>PL</item>
-    <item>PT</item>
-    <item>RO</item>    
-    <item>RU</item>
-    <item>SE</item>
-    <item>SK</item>
-    <item>SI</item>
-    <item>TR</item>
-    <item>TW</item>
-    <item>US</item>
-  </string-array>
+        <item>-</item>
+        <item>AR</item>
+        <item>AU</item>
+        <item>BR</item>
+        <item>BG</item>
+        <item>CA</item>
+        <item>CH</item>
+        <item>CN</item>
+        <item>CZ</item>
+        <item>DE</item>
+        <item>DK</item>
+        <item>ES</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>GB</item>
+        <item>GR</item>
+        <item>HU</item>
+        <item>ID</item>
+        <item>IT</item>
+        <item>JP</item>
+        <item>KR</item>
+        <item>NL</item>
+        <item>PL</item>
+        <item>PT</item>
+        <item>RO</item>
+        <item>RU</item>
+        <item>SE</item>
+        <item>SK</item>
+        <item>SI</item>
+        <item>TR</item>
+        <item>TW</item>
+        <item>US</item>
+    </string-array>
     <string-array name="preferences_front_light_options">
-    <item>@string/preferences_front_light_on</item>
-    <item>@string/preferences_front_light_auto</item>
-    <item>@string/preferences_front_light_off</item>
-  </string-array>
+        <item>@string/preferences_front_light_on</item>
+        <item>@string/preferences_front_light_auto</item>
+        <item>@string/preferences_front_light_off</item>
+    </string-array>
     <string-array name="preferences_front_light_values" ns1:ignore="MissingTranslation">
-    <item>ON</item>
-    <item>AUTO</item>
-    <item>OFF</item>
-  </string-array>
+        <item>ON</item>
+        <item>AUTO</item>
+        <item>OFF</item>
+    </string-array>
     <!-- From: file:/E:/myWorkspace/Android/zxing-adapted/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="contents_text">#ff000000</color>
@@ -202,20 +202,20 @@
     <!-- From: file:/E:/myWorkspace/Android/zxing-adapted/app/src/main/res/values/themes.xml -->
     <eat-comment/>
     <style name="CaptureTheme" parent="android:Theme.Holo">
-    <item name="android:windowFullscreen">true</item>
-    <item name="android:windowContentOverlay">@null</item>
-    <item name="android:windowActionBarOverlay">true</item>
-    <item name="android:windowActionModeOverlay">true</item>
-  </style>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
     <!-- From: file:/E:/myWorkspace/Android/zxing-adapted/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="ResultButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
-    <item name="android:layout_width">0dip</item>
-    <item name="android:layout_height">wrap_content</item>
-    <item name="android:layout_weight">1</item>
-  </style>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
     <style name="ShareButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
-    <item name="android:layout_width">wrap_content</item>
-    <item name="android:layout_height">wrap_content</item>
-  </style>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 </resources>
