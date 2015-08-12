@@ -89,6 +89,7 @@ public final class CameraManager {
         if (!initialized) {
             initialized = true;
             configManager.initFromCameraParameters(theCamera);
+
             setMyFrameRect();
 //            if (requestedFramingRectWidth > 0 && requestedFramingRectHeight > 0) {
 //                setManualFramingRect(requestedFramingRectWidth, requestedFramingRectHeight);
@@ -123,7 +124,7 @@ public final class CameraManager {
 
     private void setMyFrameRect() {
         Point screenResolution = configManager.getScreenResolution();
-        int width = screenResolution.y * 5 / 8;
+        int width = screenResolution.x * 5 / 8;
         int height = width;
         if (width > screenResolution.x) {
             width = screenResolution.x;

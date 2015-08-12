@@ -126,7 +126,7 @@ ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml
 	android:windowSoftInputMode
 		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:77:13-60
 	android:screenOrientation
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:73:13-56
+		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:73:13-49
 	android:theme
 		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:76:13-48
 	android:stateNotNeeded
