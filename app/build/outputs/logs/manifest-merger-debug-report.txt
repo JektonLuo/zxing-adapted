@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:16:1-172:12
+ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:16:1-137:12
 	xmlns:android
 		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:16:11-69
 	package
@@ -112,7 +112,7 @@ ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml
 	android:smallScreens
 		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:63:9-36
 application
-ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:66:5-170:19
+ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:66:5-135:19
 	android:label
 		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:69:9-41
 	android:allowBackup
@@ -173,65 +173,3 @@ ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml
 		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:96:21-41
 	android:scheme
 		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:94:21-42
-activity#com.google.zxing.client.android.PreferencesActivity
-ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:135:9-138:45
-	android:label
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:137:13-53
-	android:stateNotNeeded
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:138:13-42
-	android:name
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:136:13-48
-activity#com.google.zxing.client.android.book.SearchBookContentsActivity
-ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:139:9-148:20
-	android:screenOrientation
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:143:13-56
-	android:label
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:141:13-45
-	android:stateNotNeeded
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:142:13-42
-	android:name
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:140:13-60
-intent-filter#android.intent.category.DEFAULT+com.google.zxing.client.android.SEARCH_BOOK_CONTENTS
-ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:144:13-147:29
-action#com.google.zxing.client.android.SEARCH_BOOK_CONTENTS
-ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:145:17-95
-	android:name
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:145:25-92
-activity#com.google.zxing.client.android.share.ShareActivity
-ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:149:9-157:20
-	android:screenOrientation
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:152:13-45
-	android:stateNotNeeded
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:151:13-42
-	android:name
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:150:13-48
-intent-filter#android.intent.category.DEFAULT+com.google.zxing.client.android.SHARE
-ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:153:13-156:29
-action#com.google.zxing.client.android.SHARE
-ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:154:17-80
-	android:name
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:154:25-77
-activity#com.google.zxing.client.android.history.HistoryActivity
-ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:158:9-161:45
-	android:label
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:160:13-50
-	android:stateNotNeeded
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:161:13-42
-	android:name
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:159:13-52
-activity#com.google.zxing.client.android.share.BookmarkPickerActivity
-ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:162:9-165:45
-	android:label
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:164:13-57
-	android:stateNotNeeded
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:165:13-42
-	android:name
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:163:13-57
-activity#com.google.zxing.client.android.share.AppPickerActivity
-ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:166:9-169:45
-	android:label
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:168:13-52
-	android:stateNotNeeded
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:169:13-42
-	android:name
-		ADDED from E:\myWorkspace\Android\zxing-adapted\app\src\main\AndroidManifest.xml:167:13-52
