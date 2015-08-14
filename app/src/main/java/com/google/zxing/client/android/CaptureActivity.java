@@ -49,7 +49,7 @@ import java.util.Map;
  * @author dswitkin@google.com (Daniel Switkin)
  * @author Sean Owen
  */
-@SuppressWarnings("deprecation")
+
 public final class CaptureActivity extends Activity implements SurfaceHolder.Callback {
 
     private static final String TAG = CaptureActivity.class.getSimpleName();
@@ -129,7 +129,6 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
                 cameraManager.setManualFramingRect(width, height);
             }
         }
-
         if (intent.hasExtra(Intents.Scan.CAMERA_ID)) {
             int cameraId = intent.getIntExtra(Intents.Scan.CAMERA_ID, -1);
             if (cameraId >= 0) {
